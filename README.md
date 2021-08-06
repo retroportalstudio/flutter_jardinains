@@ -16,6 +16,12 @@ flutter run -d chrome --profile
 
 For more details on how to run your project in profile mode, [Click Here](https://flutter.dev/docs/testing/build-modes#profile)
 
+## Social Handles 🎯
+[Twitter](https://twitter.com/theretroportal)
+[Instagram](https://www.instagram.com/retroportalstudio)
+[Youtube](https://www.youtube.com/retroportalstudio)
+[LinkedIn](https://www.linkedin.com/in/parasjainrps/)
+
 ## Found this useful? 💙👨‍💻
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/theretroportal)
 

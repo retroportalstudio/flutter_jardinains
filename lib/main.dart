@@ -4,30 +4,10 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:jardinains/elements.dart';
 
 void main() {
   runApp(MyApp());
-}
-
-// Not Exactly a Vector, Just to keep the x and y values
-class PVector {
-  double x, y;
-
-  PVector(this.x, this.y);
-}
-
-class PlayBall {
-  PVector position = PVector(0.0, 0.0);
-  PVector velocity = PVector(0.0, 0.0);
-  double radius = 10;
-  double jumpFactor = -1.0;
-  Color color = Colors.green;
-}
-
-class Brick {
-  Rect rect;
-
-  Brick({this.rect = Rect.zero});
 }
 
 const MODES = [
@@ -83,7 +63,9 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    isMobile = Platform.isAndroid || Platform.isIOS;
+    try {
+      isMobile = Platform.isAndroid || Platform.isIOS;
+    } catch (e) {}
     WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
       setupGame();
     });
