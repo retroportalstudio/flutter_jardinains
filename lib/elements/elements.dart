@@ -1,5 +1,6 @@
 // Not Exactly a Vector, Just to keep the x and y values
 import 'package:flutter/material.dart';
+import 'package:jardinains/jardinain.dart';
 
 class PVector {
   double x, y;
@@ -17,6 +18,7 @@ class PlayBall {
 
 class Brick {
   Rect rect;
+  Jardinain? jardinain;
 
-  Brick({this.rect = Rect.zero});
+  Brick({this.rect = Rect.zero,this.jardinain});
 }
